@@ -53,4 +53,6 @@ Execute `dmesg | grep -e DMAR -e IOMMU` and check the output for:
 
 [Pci passthrough](https://pve.proxmox.com/wiki/Pci_passthrough)
 
-[Windows 10 guest best practices](Windows 10 guest best practices)
+[Qemu/KVM Virtual Machines](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines)
+
+[Windows 10 guest best practices](https://pve.proxmox.com/wiki/Windows_10_guest_best_practices)
