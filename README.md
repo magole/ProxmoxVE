@@ -17,7 +17,7 @@ Enable ASPM or set to Auto.
 
 Enable UEFI boot.
 
-Set primary GPU as PCIe to be able to passthrough integrated GPU.
+Set primary display to PCI and enable Internal Graphics option to be able to passthrough integrated GPU.
 
 ## Enable IOMMU
 
