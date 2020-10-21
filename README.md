@@ -69,3 +69,5 @@ blacklist i915
 [Windows 10 guest best practices](https://pve.proxmox.com/wiki/Windows_10_guest_best_practices)
 
 [PCI passthrough via OVMF](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF)
+
+[Proxmox ZFS on Linux](https://pve.proxmox.com/wiki/ZFS_on_Linux)
