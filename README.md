@@ -57,6 +57,17 @@ blacklist snd_hda_codec_hdmi
 blacklist i915
 ```
 
+## GPU passthrough
+```
+All functions [Y]
+ROM-Bar [Y]
+PCI-Express [Y]
+```
+
+## NIC passthrough
+Tested on Intel I350-T4. Each nic must be in its own iommu group. When passing through individual nics, do not enable `All Functions` or `ROM-Bar`.
+
+
 ## References
 [Admin Guide PCI passthrough](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#qm_pci_passthrough)
 
