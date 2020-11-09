@@ -67,6 +67,14 @@ PCI-Express [Y]
 ## NIC passthrough
 Tested on Intel I350-T4. Each nic must be in its own iommu group. When passing through individual nics, do not enable `All Functions` or `ROM-Bar`.
 
+## Enable updates for Proxmox free version
+```
+rm /etc/apt/sources.list.d/pve-enterprise.list
+echo "deb http://download.proxmox.com/debian/pve buster pve-no-subscription" > /etc/apt/sources.list.d/pve-no-subscription.list
+apt update
+apt full-upgrade
+```
+
 
 ## References
 [Admin Guide PCI passthrough](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#qm_pci_passthrough)
