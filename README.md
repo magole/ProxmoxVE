@@ -77,6 +77,8 @@ apt full-upgrade
 
 
 ## References
+[Create USB installer](https://pve.proxmox.com/wiki/Prepare_Installation_Media)
+
 [Admin Guide PCI passthrough](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#qm_pci_passthrough)
 
 [Pci passthrough](https://pve.proxmox.com/wiki/Pci_passthrough)
