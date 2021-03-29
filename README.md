@@ -1,4 +1,4 @@
-## ProxmoxVE
+## ProxmoxVE (PVE)
 Describes how to setup Proxmox VE 6.2 with ZFS and device passthrough (Intel CPU).
 
 ### Hardware used
@@ -75,6 +75,14 @@ apt update
 apt full-upgrade
 ```
 
+## Reduce rpool disk writes
+Proxmox writes lots of logs to disk and will wear out SSDs fast. Remove any logging you don't need. For standalone PVE, some services can be disabled.
+```
+systemctl stop pve-ha-lrm.service
+systemctl stop pve-ha-crm.service
+systemctl disable pve-ha-lrm.service
+systemctl disable pve-ha-crm.service
+```
 
 ## References
 [Create USB installer](https://pve.proxmox.com/wiki/Prepare_Installation_Media)
