@@ -76,7 +76,7 @@ apt full-upgrade
 ```
 
 ## Reduce rpool disk writes
-Proxmox writes lots of logs to disk and will wear out SSDs fast. Remove any logging you don't need. For standalone PVE, some services can be disabled.
+Proxmox writes lots of logs to disk and will wear out SSDs fast. Remove any logging you don't need. For standalone PVE, some [services](https://pve.proxmox.com/wiki/Service_daemons) can be disabled.
 ```
 systemctl stop pve-ha-lrm.service
 systemctl stop pve-ha-crm.service
