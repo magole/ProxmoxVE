@@ -6,7 +6,7 @@ Describes how to setup Proxmox VE 6.2 with ZFS and device passthrough (Intel CPU
 
 [Intel I3-9300](https://ark.intel.com/content/www/us/en/ark/products/134886/intel-core-i3-9300-processor-8m-cache-up-to-4-30-ghz.html) with integrated UHD630 GPU.
 
-Micron 18ASF2G72AZ-2G3B1, 16GiB, 4 sticks
+Micron 18ASF2G72AZ-2G3B1, 16GiB * 4 sticks
 
 Two NVMe SSD drives for ZFS on root mirror (SK hynix Gold P31 1TB, SHGP31-1000GM-2)
 
