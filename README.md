@@ -6,9 +6,9 @@ Describes how to setup Proxmox VE 6.2 with ZFS and device passthrough (Intel CPU
 
 [Intel I3-9300](https://ark.intel.com/content/www/us/en/ark/products/134886/intel-core-i3-9300-processor-8m-cache-up-to-4-30-ghz.html) with integrated UHD630 GPU.
 
-[Kingston KVR24E17D8/16MA](https://www.kingston.com/datasheets/KVR24E17D8_16MA.pdf), 32GiB total.
+Micron 18ASF2G72AZ-2G3B1, 16GiB, 4 sticks
 
-Two SSD drives for ZFS on root mirror.
+Two NVMe SSD drives for ZFS on root mirror (SK hynix Gold P31 1TB, SHGP31-1000GM-2)
 
 ## BIOS changes
 Enable VT-d, VT-x, etc.
@@ -82,6 +82,10 @@ systemctl stop pve-ha-lrm.service
 systemctl stop pve-ha-crm.service
 systemctl disable pve-ha-lrm.service
 systemctl disable pve-ha-crm.service
+```
+Enable SSD autotrim
+```
+zpool set autotrim=on rpool
 ```
 
 ## References
