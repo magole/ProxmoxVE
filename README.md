@@ -104,3 +104,5 @@ zpool set autotrim=on rpool
 [PCI passthrough via OVMF](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF)
 
 [Proxmox ZFS on Linux](https://pve.proxmox.com/wiki/ZFS_on_Linux)
+
+[ZFS Module Parameters](https://openzfs.github.io/openzfs-docs/Performance%20and%20Tuning/Module%20Parameters.html)
