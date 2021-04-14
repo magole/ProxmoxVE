@@ -100,6 +100,12 @@ Set async write timeout temporarily to see impact.
 ```
 echo 30 > /sys/module/zfs/parameters/zfs_txg_timeout
 ```
+To preserve `zfs_txg_timeout` across reboots, modify config to include `options zfs zfs_txg_timeout=30` line.
+```
+nano /etc/modprobe.d/zfs.conf
+update-initramfs -u
+pve-efiboot-tool refresh
+```
 
 
 ## References
