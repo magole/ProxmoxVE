@@ -83,10 +83,19 @@ systemctl stop pve-ha-crm.service
 systemctl disable pve-ha-lrm.service
 systemctl disable pve-ha-crm.service
 ```
-Enable SSD autotrim
+Enable SSD autotrim.
 ```
 zpool set autotrim=on rpool
 ```
+Check time before async writes are written to disk. Increased timeout reduces SSD wear.
+```
+cat /sys/module/zfs/parameters/zfs_txg_timeout
+```
+Set async write timeout temporarily to see impact.
+```
+echo 30 > /sys/module/zfs/parameters/zfs_txg_timeout
+```
+
 
 ## References
 [Create USB installer](https://pve.proxmox.com/wiki/Prepare_Installation_Media)
