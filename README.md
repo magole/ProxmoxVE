@@ -92,6 +92,8 @@ Enable SSD autotrim.
 ```
 zpool set autotrim=on rpool
 ```
+To manually trim, execute `zpool trim`.
+
 Check time before async writes are written to disk. Increased timeout reduces SSD wear.
 ```
 cat /sys/module/zfs/parameters/zfs_txg_timeout
