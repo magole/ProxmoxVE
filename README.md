@@ -83,6 +83,11 @@ systemctl stop pve-ha-crm.service
 systemctl disable pve-ha-lrm.service
 systemctl disable pve-ha-crm.service
 ```
+For single box PVE, make timer not run too often by setting `OnCalendar=monthly`
+```
+systemctl edit --full pvesr.timer
+systemctl daemon-reload
+```
 Enable SSD autotrim.
 ```
 zpool set autotrim=on rpool
